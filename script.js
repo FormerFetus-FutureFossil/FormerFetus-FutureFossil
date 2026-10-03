@@ -1,1 +1,1 @@
-
+// No JavaScript required currently.
