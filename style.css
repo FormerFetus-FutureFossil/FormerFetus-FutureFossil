@@ -1,1 +1,52 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(
+        to bottom,
+        #f8f7f4,
+        #ece8df
+    );
+    font-family: Georgia, serif;
+}
 
+.container {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #2f2f2f;
+    margin-bottom: 40px;
+}
+
+img {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+
+    border-radius: 8px;
+
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+
+    margin-bottom: 30px;
+}
+
+.gift-link {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #1a4d8f;
+    text-decoration: none;
+}
+
+.gift-link:hover {
+    text-decoration: underline;
+}
+
+.password-note {
+    margin-top: 10px;
+    font-size: 0.85rem;
+    font-style: italic;
+    color: #666;
+}
