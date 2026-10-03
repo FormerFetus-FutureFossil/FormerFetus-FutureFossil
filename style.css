@@ -1,52 +1,144 @@
 body {
     margin: 0;
     padding: 0;
-    background: linear-gradient(
-        to bottom,
-        #f8f7f4,
-        #ece8df
-    );
-    font-family: Georgia, serif;
+    background: #f7f4ee;
+    font-family: "Palatino Linotype", Georgia, serif;
+    color: #2f2f2f;
 }
 
-.container {
+.top-section {
     text-align: center;
-    padding: 50px 20px;
+    padding: 40px 20px 60px;
+    background: linear-gradient(
+        to bottom,
+        #faf8f3,
+        #f1ebdf
+    );
+}
+
+.title-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.balloon {
+    font-size: 2.5rem;
 }
 
 h1 {
     font-size: 3rem;
     font-weight: bold;
-    color: #2f2f2f;
-    margin-bottom: 40px;
+    margin: 20px 0 30px;
+    color: #2c2c2c;
+    line-height: 1.2;
 }
 
-img {
-    max-width: 300px;
+.dob-image {
+    max-width: 420px;
     width: 100%;
     height: auto;
 
-    border-radius: 8px;
+    border-radius: 10px;
 
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.18);
 
+    margin-bottom: 25px;
+}
+
+.birthday-line {
+    font-size: 1.15rem;
+    color: #555;
     margin-bottom: 30px;
 }
 
 .gift-link {
-    font-size: 1.3rem;
-    font-weight: bold;
-    color: #1a4d8f;
+    display: inline-block;
+
+    background: #4f6d7a;
+
+    color: white;
+
+    padding: 14px 30px;
+
+    border-radius: 40px;
+
     text-decoration: none;
+
+    font-size: 1.2rem;
+
+    font-weight: bold;
+
+    transition: all 0.3s ease;
 }
 
 .gift-link:hover {
-    text-decoration: underline;
+    background: #35515c;
+    transform: scale(1.05);
 }
 
 .password-note {
-    margin-top: 10px;
-    font-size: 0.85rem;
+    margin-top: 15px;
+    font-size: 0.9rem;
     font-style: italic;
     color: #666;
+}
+
+.nature-section {
+    height: 550px;
+
+    background-image: url("nature.jpeg");
+
+    background-size: cover;
+
+    background-position: center center;
+
+    background-repeat: no-repeat;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+.nature-overlay {
+    background: rgba(255,255,255,0.75);
+
+    padding: 25px 40px;
+
+    border-radius: 15px;
+
+    backdrop-filter: blur(3px);
+
+    text-align: center;
+
+    max-width: 700px;
+}
+
+.nature-overlay h2 {
+    margin: 0;
+    font-size: 2rem;
+    color: #2f2f2f;
+}
+
+@media (max-width: 768px) {
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .balloon {
+        font-size: 2rem;
+    }
+
+    .nature-overlay h2 {
+        font-size: 1.4rem;
+    }
+
+    .nature-section {
+        height: 400px;
+    }
 }
